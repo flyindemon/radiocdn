@@ -1,15 +1,15 @@
-// Bescherming tegen afbeeldingsdiefstal | XerosRadio
+// Bescherming tegen afbeeldingsdiefstal | RadioCDN
 document.addEventListener('DOMContentLoaded', function () {
     // Selecteer alle afbeeldingen op de pagina
     const afbeeldingen = document.querySelectorAll('img');
   
-    // Voorkom het standaard contextmenu en toon een aangepopt bericht | XerosRadio
+    // Voorkom het standaard contextmenu en toon een aangepopt bericht | RadioCDN
     function toonAangepoptBericht(event) {
       event.preventDefault();
       alert('U mag geen afbeeldingen van onze website stelen zonder toestemming!');
     }
   
-    // Voeg een eventlistener toe aan elke afbeelding om met rechts klikken om te gaan | XerosRadio
+    // Voeg een eventlistener toe aan elke afbeelding om met rechts klikken om te gaan | RadioCDN
     afbeeldingen.forEach((img) => {
       img.addEventListener('contextmenu', toonAangepoptBericht);
       
